@@ -1,0 +1,40 @@
+package com.google.android.gms.internal.ads;
+
+import android.content.Context;
+import java.util.concurrent.Executor;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class yp2 implements j84 {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    private final w84 f17872a;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    private final w84 f17873b;
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    private final w84 f17874c;
+
+    /* JADX INFO: renamed from: d, reason: collision with root package name */
+    private final w84 f17875d;
+
+    /* JADX INFO: renamed from: e, reason: collision with root package name */
+    private final w84 f17876e;
+
+    /* JADX INFO: renamed from: f, reason: collision with root package name */
+    private final w84 f17877f;
+
+    public yp2(w84 w84Var, w84 w84Var2, w84 w84Var3, w84 w84Var4, w84 w84Var5, w84 w84Var6) {
+        this.f17872a = w84Var;
+        this.f17873b = w84Var2;
+        this.f17874c = w84Var3;
+        this.f17875d = w84Var4;
+        this.f17876e = w84Var5;
+        this.f17877f = w84Var6;
+    }
+
+    @Override // com.google.android.gms.internal.ads.w84
+    public final /* bridge */ /* synthetic */ Object k() {
+        return new xp2((Context) this.f17872a.k(), (Executor) this.f17873b.k(), (bo0) this.f17874c.k(), (va2) this.f17875d.k(), (yq2) this.f17876e.k(), new rs2());
+    }
+}

@@ -1,0 +1,16 @@
+package m3;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class k1 {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public final String f24761a;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public final String f24762b;
+
+    k1(String str, String str2) {
+        this.f24761a = str;
+        this.f24762b = str2;
+    }
+}

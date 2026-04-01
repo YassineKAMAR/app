@@ -1,0 +1,11 @@
+package l2;
+
+/* JADX INFO: loaded from: classes.dex */
+@Deprecated
+public interface f {
+    void onDestroy();
+
+    void onPause();
+
+    void onResume();
+}
