@@ -25,6 +25,11 @@ Cette application est personnalisée pour le laboratoire d'hématologie avec:
 
 ## Construction de l'APK
 
+## Où trouver l'APK sur GitHub
+
+- **Releases GitHub**: Téléchargez l'APK depuis l'onglet *Releases* (s'il est publié). Le fichier est généralement nommé `app-debug.apk` ou `BMCounter-debug.apk`.
+- **Dépôt GitHub**: Les APK ne sont pas stockés dans le dépôt Git par défaut. Il faut le générer localement via Gradle.
+
 ### Prérequis
 - Android SDK installé
 - Gradle 7.5 ou supérieur
@@ -41,6 +46,7 @@ cd /path/to/BMCounter
 
 # L'APK sera situé à:
 # build/outputs/apk/debug/app-debug.apk
+# (peut aussi être nommé BMCounter-debug.apk selon la configuration)
 ```
 
 ### Alternative (si gradlew n'est pas disponible)
