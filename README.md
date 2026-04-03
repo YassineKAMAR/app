@@ -2,6 +2,8 @@
 
 Application mobile pour le Laboratoire d'Hématologie du Centre Hospitalier Universitaire Générale Mohammed VI (GST - Tanger-Tétouan-Al Hoceima).
 
+> 🔗 **TÉLÉCHARGER L'APK**: Consultez [`LIEN_TELECHARGEMENT_APK.md`](LIEN_TELECHARGEMENT_APK.md) pour les liens de téléchargement et le déploiement local.
+
 > 📚 **Documentation Complète**: Consultez [`INDEX_DOCUMENTATION.md`](INDEX_DOCUMENTATION.md) pour naviguer dans toute la documentation du projet.
 
 ## Description

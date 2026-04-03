@@ -14,7 +14,8 @@
 
 | Fichier | Description | Pour Qui? |
 |---------|-------------|-----------|
-| **[GUIDE_RAPIDE_APK.md](GUIDE_RAPIDE_APK.md)** | ⭐ **COMMENCEZ ICI** - Guide rapide visuel | Tout le monde |
+| **[LIEN_TELECHARGEMENT_APK.md](LIEN_TELECHARGEMENT_APK.md)** | 🔗 **LIENS DIRECTS** - Téléchargement et déploiement local | Tout le monde ⭐ |
+| **[GUIDE_RAPIDE_APK.md](GUIDE_RAPIDE_APK.md)** | Guide rapide visuel | Tout le monde |
 | **[OU_TROUVER_APK.md](OU_TROUVER_APK.md)** | Explication complète et détaillée | Développeurs & utilisateurs |
 | **[PUBLIER_RELEASE.md](PUBLIER_RELEASE.md)** | Comment publier l'APK sur GitHub | Mainteneurs du projet |
 

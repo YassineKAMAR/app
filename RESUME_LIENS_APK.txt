@@ -1,0 +1,100 @@
+═══════════════════════════════════════════════════════════════════════
+    📱 BMCounter - RÉSUMÉ DES LIENS POUR TÉLÉCHARGER L'APK
+═══════════════════════════════════════════════════════════════════════
+
+🎯 LIENS DIRECTS DE TÉLÉCHARGEMENT
+───────────────────────────────────────────────────────────────────────
+
+1. GitHub Releases (RECOMMANDÉ):
+   https://github.com/YassineKAMAR/app/releases
+
+2. Téléchargement Direct (dernière version):
+   https://github.com/YassineKAMAR/app/releases/latest/download/app-debug.apk
+
+3. GitHub Actions (Artifacts):
+   https://github.com/YassineKAMAR/app/actions
+
+
+⚠️  IMPORTANT: Pour que les liens de release fonctionnent, vous devez
+    d'abord créer une release. Voir instructions ci-dessous.
+
+
+💻 DÉPLOIEMENT LOCAL
+───────────────────────────────────────────────────────────────────────
+
+ÉTAPE 1: Cloner le projet
+──────────────────────────
+git clone https://github.com/YassineKAMAR/app.git
+cd app
+
+
+ÉTAPE 2: Compiler l'APK
+────────────────────────
+# Créer le wrapper Gradle (première fois)
+gradle wrapper --gradle-version=7.5
+chmod +x gradlew
+
+# Compiler
+./gradlew assembleDebug
+
+
+ÉTAPE 3: Localiser l'APK
+─────────────────────────
+L'APK sera situé à:
+app/build/outputs/apk/debug/app-debug.apk
+
+
+ÉTAPE 4: Installer sur Android
+───────────────────────────────
+Option A - Transfert manuel:
+  - Copiez app-debug.apk vers votre téléphone
+  - Activez "Sources inconnues" dans Paramètres Android
+  - Ouvrez le fichier APK pour installer
+
+Option B - Via ADB:
+  adb install -r build/outputs/apk/debug/app-debug.apk
+
+
+🚀 CRÉER UNE RELEASE (pour publier l'APK en ligne)
+───────────────────────────────────────────────────────────────────────
+
+Pour rendre l'APK téléchargeable depuis GitHub:
+
+git tag -a v1.0.0 -m "Version 1.0.0"
+git push origin v1.0.0
+
+GitHub Actions va automatiquement:
+✅ Compiler l'APK
+✅ Créer la release
+✅ Publier l'APK
+
+L'APK sera alors disponible sur:
+https://github.com/YassineKAMAR/app/releases/download/v1.0.0/app-debug.apk
+
+
+📋 PRÉREQUIS POUR COMPILATION LOCALE
+───────────────────────────────────────────────────────────────────────
+
+✓ Git
+✓ JDK 17 (Java Development Kit)
+✓ Android SDK (API 34)
+✓ Gradle 7.5+
+
+
+📚 DOCUMENTATION CRÉÉE
+───────────────────────────────────────────────────────────────────────
+
+✅ LIEN_TELECHARGEMENT_APK.md  - Guide complet avec tous les détails
+✅ LIENS_RAPIDES.md             - Référence rapide des liens essentiels
+✅ RESUME_LIENS_APK.txt         - Ce fichier (résumé texte)
+
+Mise à jour:
+✅ README.md                    - Ajout du lien vers le nouveau guide
+✅ INDEX_DOCUMENTATION.md       - Référence au nouveau document
+
+
+═══════════════════════════════════════════════════════════════════════
+📞 Pour plus d'informations, consultez:
+   - LIEN_TELECHARGEMENT_APK.md (guide détaillé)
+   - LIENS_RAPIDES.md (liens essentiels)
+═══════════════════════════════════════════════════════════════════════
