@@ -2,6 +2,8 @@
 
 Application mobile pour le Laboratoire d'Hématologie du Centre Hospitalier Universitaire Générale Mohammed VI (GST - Tanger-Tétouan-Al Hoceima).
 
+> 📚 **Documentation Complète**: Consultez [`INDEX_DOCUMENTATION.md`](INDEX_DOCUMENTATION.md) pour naviguer dans toute la documentation du projet.
+
 ## Description
 
 Cette application est personnalisée pour le laboratoire d'hématologie avec:
@@ -23,10 +25,29 @@ Cette application est personnalisée pour le laboratoire d'hématologie avec:
 - **Couleur Accent**: #B91E2E
 - **Couleur Secondaire**: #FFFFFF (Blanc)
 
+## 📱 Où Trouver l'APK?
+
+**Important**: L'APK **n'est PAS inclus dans le dépôt GitHub** car les fichiers de build sont exclus par `.gitignore`.
+
+### Options pour Obtenir l'APK:
+
+1. **Compiler Localement** (recommandé pour les développeurs)
+   - Voir la section "Construction de l'APK" ci-dessous
+   - L'APK sera dans: `build/outputs/apk/debug/app-debug.apk`
+
+2. **GitHub Releases** (recommandé pour les utilisateurs)
+   - Allez dans l'onglet [Releases](../../releases)
+   - Téléchargez l'APK depuis la dernière version
+
+3. **GitHub Actions Artifacts**
+   - Si configuré, téléchargez depuis les artifacts du workflow
+
+📄 Consultez [OU_TROUVER_APK.md](OU_TROUVER_APK.md) pour plus de détails.
+
 ## Construction de l'APK
 
 ### Prérequis
-- Android SDK installé
+- Android SDK installé (API 34)
 - Gradle 7.5 ou supérieur
 - JDK 17
 

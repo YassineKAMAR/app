@@ -1,0 +1,43 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:  # Permet de déclencher manuellement
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
+
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew || gradle wrapper --gradle-version=7.5 && chmod +x gradlew
+
+    - name: Build Debug APK
+      run: ./gradlew assembleDebug
+
+    - name: Upload APK as Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: BMCounter-debug
+        path: build/outputs/apk/debug/*.apk
+        retention-days: 30
+
+    - name: Get APK info
+      run: |
+        echo "APK built successfully!"
+        ls -lh build/outputs/apk/debug/

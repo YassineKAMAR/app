@@ -1,0 +1,62 @@
+name: Create Release with APK
+
+on:
+  push:
+    tags:
+      - 'v*'  # Déclenché quand vous créez un tag comme v1.0.0
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
+
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew || gradle wrapper --gradle-version=7.5 && chmod +x gradlew
+
+    - name: Build Release APK
+      run: ./gradlew assembleRelease || ./gradlew assembleDebug
+
+    - name: Get version from tag
+      id: get_version
+      run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: |
+          build/outputs/apk/release/*.apk
+          build/outputs/apk/debug/*.apk
+        name: Release ${{ steps.get_version.outputs.VERSION }}
+        body: |
+          ## BMCounter - Version ${{ steps.get_version.outputs.VERSION }}
+
+          Application mobile pour le Laboratoire d'Hématologie du CHU Mohammed VI
+
+          ### 📥 Téléchargement
+          Téléchargez l'APK ci-dessous et installez-le sur votre appareil Android.
+
+          ### 📋 Informations
+          - **Version**: ${{ steps.get_version.outputs.VERSION }}
+          - **SDK Cible**: Android 13 (API 33)
+          - **SDK Minimum**: Android 5.0 (API 21)
+
+          ### 🚀 Installation
+          1. Téléchargez le fichier APK
+          2. Activez "Sources inconnues" dans les paramètres Android
+          3. Ouvrez le fichier APK pour l'installer
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

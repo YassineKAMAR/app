@@ -1,5 +1,16 @@
 # Instructions de Construction - BMCounter App
 
+## ⚠️ Note Importante: L'APK n'est PAS dans GitHub
+
+L'APK compilé **n'est pas présent dans le dépôt GitHub** car il est exclu par `.gitignore`.
+
+Pour obtenir l'APK, vous avez 3 options:
+1. **Compiler localement** (instructions ci-dessous)
+2. **Télécharger depuis GitHub Releases** (recommandé pour les utilisateurs)
+3. **Utiliser GitHub Actions Artifacts** (si configuré)
+
+📄 Voir [OU_TROUVER_APK.md](OU_TROUVER_APK.md) pour plus de détails.
+
 ## Pour Construire l'APK Android
 
 ### Option 1: Utiliser Android Studio
