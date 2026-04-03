@@ -15,6 +15,7 @@
 | Fichier | Description | Pour Qui? |
 |---------|-------------|-----------|
 | **[GUIDE_RAPIDE_APK.md](GUIDE_RAPIDE_APK.md)** | ⭐ **COMMENCEZ ICI** - Guide rapide visuel | Tout le monde |
+| **[DEPLOIEMENT_LOCAL.md](DEPLOIEMENT_LOCAL.md)** | 🚀 **Liens de téléchargement et déploiement local** | Tout le monde |
 | **[OU_TROUVER_APK.md](OU_TROUVER_APK.md)** | Explication complète et détaillée | Développeurs & utilisateurs |
 | **[PUBLIER_RELEASE.md](PUBLIER_RELEASE.md)** | Comment publier l'APK sur GitHub | Mainteneurs du projet |
 
@@ -54,8 +55,8 @@
 
 ### Scénario 1: "Je veux juste télécharger l'APK"
 ```
-1. GUIDE_RAPIDE_APK.md
-2. → GitHub Releases (lien fourni)
+1. DEPLOIEMENT_LOCAL.md (liens directs)
+2. → GitHub Releases: https://github.com/YassineKAMAR/app/releases
 3. → Télécharger et installer
 ```
 
@@ -98,6 +99,7 @@ BMCounter/
 ├── 📚 DOCUMENTATION UTILISATEUR
 │   ├── README.md                     # ⭐ Vue d'ensemble
 │   ├── GUIDE_RAPIDE_APK.md          # ⭐ Guide rapide APK
+│   ├── DEPLOIEMENT_LOCAL.md         # 🚀 Déploiement local & liens
 │   └── INDEX_DOCUMENTATION.md        # ⭐ Ce fichier
 │
 ├── 🔧 DOCUMENTATION DÉVELOPPEUR
@@ -187,4 +189,4 @@ Avant de publier une version:
 
 **Date de création**: 2026-04-03
 **Dernière mise à jour**: 2026-04-03
-**Version de la documentation**: 1.0
+**Version de la documentation**: 1.1
