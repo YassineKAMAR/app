@@ -1,7 +1,6 @@
 package hokudai.kazusasa.BMCounter;
 
-import io.flutter.embedding.android.e;
+import android.app.Activity;
 
-/* JADX INFO: loaded from: classes.dex */
-public final class MainActivity extends e {
+public class MainActivity extends Activity {
 }

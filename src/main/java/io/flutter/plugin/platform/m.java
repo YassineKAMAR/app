@@ -1,6 +1,0 @@
-package io.flutter.plugin.platform;
-
-/* JADX INFO: loaded from: classes.dex */
-public interface m {
-    boolean a(String str, l lVar);
-}

@@ -56,5 +56,5 @@ repositories {
 }
 
 dependencies {
-    // TODO: dependencies
+    // Flutter libraries are included via the lib directory
 }
