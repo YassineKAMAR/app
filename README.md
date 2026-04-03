@@ -42,6 +42,7 @@ Cette application est personnalisée pour le laboratoire d'hématologie avec:
 cd /path/to/BMCounter
 
 # Construire l'APK de débogage
+chmod +x gradlew
 ./gradlew assembleDebug
 
 # L'APK sera situé à:
@@ -64,15 +65,8 @@ Si vous partagez ce dossier via un serveur local, pointez le lien direct vers ce
 adb install -r build/outputs/apk/debug/app-debug.apk
 ```
 
-### Alternative (si gradlew n'est pas disponible)
-
-```bash
-# Initialiser le wrapper Gradle
-gradle wrapper --gradle-version=7.5
-
-# Puis construire
-./gradlew assembleDebug
-```
+### Remarque
+Le wrapper Gradle est déjà inclus dans le dépôt (gradlew + gradle/wrapper/).
 
 ## Structure du Projet
 

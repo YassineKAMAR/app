@@ -7,7 +7,12 @@
 - **Splash Logo**: Copied to `src/main/res/drawable/splash_logo.jpg`
 - **Icon**: Copied to `src/main/res/drawable/icon.jpg`
 
-### 2. Color Scheme Updates (src/main/res/values/colors.xml)
+### 2. Build Assets Fixes
+- **Launcher Foreground**: Added `src/main/res/drawable/ic_launcher_foreground.xml` to satisfy adaptive icon references.
+- **Gradle Wrapper**: Added `gradlew`, `gradlew.bat`, and `gradle/wrapper/gradle-wrapper.properties` with Gradle 7.5.
+- **ProGuard Config**: Added an empty `proguard-rules.pro` so release builds resolve the file reference.
+
+### 3. Color Scheme Updates (src/main/res/values/colors.xml)
 Updated the app's color theme to match the medical/hematology laboratory branding:
 
 - **Primary Color**: #B91E2E (Deep Red/Burgundy - matches the lab logo)
@@ -18,7 +23,7 @@ Updated the app's color theme to match the medical/hematology laboratory brandin
 
 Changed from the original teal/orange colors to medical-themed red/burgundy colors that match the Hematology Laboratory branding.
 
-### 3. Configuration Files Created
+### 4. Configuration Files Created
 - `settings.gradle`: Project settings
 - `gradle.properties`: Gradle build properties
 - `local.properties`: Local SDK configuration
@@ -49,20 +54,15 @@ The new logos represent "LABORATOIRE D'HEMATOLOGIE" (Hematology Laboratory) for:
 cd /path/to/BMCounter
 
 # Build debug APK
+chmod +x gradlew
 ./gradlew assembleDebug
 
 # The APK will be located at:
 # build/outputs/apk/debug/app-debug.apk
 ```
 
-### Alternative Build (if gradlew is not available)
-```bash
-# Initialize Gradle wrapper
-gradle wrapper --gradle-version=7.5
-
-# Then build
-./gradlew assembleDebug
-```
+### Remarque
+Le wrapper Gradle est déjà inclus dans le dépôt (gradlew + gradle/wrapper/).
 
 ## Source Code Repository
 The modified source code is ready to be uploaded to GitHub. The repository will contain:

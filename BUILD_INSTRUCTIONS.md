@@ -17,20 +17,10 @@
 # 1. Assurez-vous que ANDROID_SDK_ROOT est défini
 export ANDROID_SDK_ROOT=/path/to/android-sdk
 
-# 2. Installez Gradle si nécessaire
-# Sur Ubuntu/Debian:
-sudo apt-get install gradle
-
-# Sur macOS avec Homebrew:
-brew install gradle
-
-# 3. Créez le wrapper Gradle (si pas déjà fait)
-gradle wrapper --gradle-version=7.5
-
-# 4. Rendez le script exécutable
+# 2. Utilisez le wrapper Gradle (fourni dans ce dépôt)
 chmod +x gradlew
 
-# 5. Construisez l'APK
+# 3. Construisez l'APK
 ./gradlew assembleDebug
 
 # 6. Trouvez votre APK
@@ -54,11 +44,8 @@ docker run --rm -v "$PWD":/project -w /project \
 echo "sdk.dir=/path/to/android-sdk" > local.properties
 ```
 
-### Erreur: Gradle version
-```bash
-# Mettez à jour le wrapper Gradle:
-gradle wrapper --gradle-version=7.5
-```
+### Remarque
+Le wrapper Gradle est déjà inclus dans le dépôt (gradlew + gradle/wrapper/).
 
 ### Erreur: Build Tools
 ```bash
