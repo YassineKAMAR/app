@@ -40,8 +40,10 @@ cd /path/to/BMCounter
 ./gradlew assembleDebug
 
 # L'APK sera situé à:
-# build/outputs/apk/debug/app-debug.apk
+# build/outputs/apk/debug/BMCounter-debug.apk
 ```
+
+**Note importante**: Le fichier APK n'est **pas inclus dans GitHub** car il est généré lors de la compilation. Le répertoire `build/` est exclu du contrôle de version (via `.gitignore`). Vous devez construire le projet localement pour obtenir l'APK.
 
 ### Alternative (si gradlew n'est pas disponible)
 
