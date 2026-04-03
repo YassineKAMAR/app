@@ -49,6 +49,21 @@ cd /path/to/BMCounter
 # (peut aussi être nommé BMCounter-debug.apk selon la configuration)
 ```
 
+## Lien local pour télécharger l'APK
+
+Après la compilation, l'APK de débogage est disponible localement ici :
+
+- `build/outputs/apk/debug/app-debug.apk`
+
+Si vous partagez ce dossier via un serveur local, pointez le lien direct vers ce fichier.
+
+## Déploiement local (ADB)
+
+```bash
+# Installer ou mettre à jour l'APK sur un appareil connecté
+adb install -r build/outputs/apk/debug/app-debug.apk
+```
+
 ### Alternative (si gradlew n'est pas disponible)
 
 ```bash
