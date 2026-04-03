@@ -23,7 +23,20 @@ Cette application est personnalisée pour le laboratoire d'hématologie avec:
 - **Couleur Accent**: #B91E2E
 - **Couleur Secondaire**: #FFFFFF (Blanc)
 
-## Construction de l'APK
+## 📥 Télécharger l'APK
+
+**L'APK n'est pas stocké dans le dépôt Git.** Pour télécharger l'application:
+
+👉 **[Consultez le guide de téléchargement complet](COMMENT_TROUVER_APK.md)**
+
+### Méthode Rapide
+
+1. Allez dans l'onglet **[Actions](https://github.com/YassineKAMAR/app/actions)** sur GitHub
+2. Cliquez sur le workflow **"Build Android APK"** le plus récent
+3. Téléchargez l'artifact **"BMCounter-debug-apk"**
+4. Décompressez le fichier ZIP pour obtenir `BMCounter-debug.apk`
+
+## Construction de l'APK (Local)
 
 ### Prérequis
 - Android SDK installé
@@ -52,6 +65,10 @@ gradle wrapper --gradle-version=7.5
 # Puis construire
 ./gradlew assembleDebug
 ```
+
+## 🤖 Build Automatique
+
+Un workflow GitHub Actions construit automatiquement l'APK à chaque push. L'APK est disponible comme artifact pendant 90 jours.
 
 ## Structure du Projet
 
