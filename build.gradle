@@ -1,6 +1,14 @@
-plugins {
-    id 'com.android.application'
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.2'
+    }
 }
+
+apply plugin: 'com.android.application'
 
 android {
 	namespace "hokudai.kazusasa.BMCounter"
@@ -31,6 +39,11 @@ android {
 
     lintOptions {
         abortOnError false
+    }
+
+    aaptOptions {
+        ignoreAssetsPattern '!.svn:!.git:.*:!CVS:!thumbs.db:!picasa.ini:!*.scc:*~'
+        cruncherEnabled = false
     }
 
     buildFeatures {
